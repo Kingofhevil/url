@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>云书签</title>
+    <link rel="apple-touch-icon-precomposed" href="pictures/dabai-apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="pictures/dabai-icon.png">
+    <script src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+      if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='http://kingofhevil.github.io/dependencies/js/jquery-2.0.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script>
+    <style type="text/css">
+      * {        
+        margin:0px;
+        padding:0px;
+      }
+      a:link,a:visited {
+        display:block;
+        color:#FFF;
+        text-decoration:none;        
+      }
+      a:hover,a:active {
+        background-color:#cc0000;
+      }
+      h1:hover {
+        background-color:#FFDC35;
+      }
+      #csharp {
+        background-color:#000;
+        width:100%;
+        float:left;
+      }      
+      #csharp div {
+        background-color:#000;
+        width:20%;
+        float:left;
+        height:auto;
+        z-index:-1;
+      }
+      #csharp div h1 {
+        color:red;        
+      }
+      #csharp div ul {
+        list-style-type:none;
+      }
+      #csharp div ul li {
+        text-indent:40px;
+      }
+      #judy {
+        width:100%;
+        height:auto;
+        position:relative;
+        float:left;
+        background:url("pictures/dabai.png")
+      }
+      #judy li {
+        border:none;
+        display:block;
+        text-align:center;
+        line-height:100px;
+        color:red;
+        height:100px;
+      }
+      #judy .judyblock {
+        padding-top:50px;
+        position:absolute;        
+        font-size:150%;        
+        width:75%;
+        height:650px;
+      }
+      #judy a{
+        display:block;        
+        text-indent:40px;
+        color:#00F;
+        text-decoration:none;        
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("#judyBuy").hide();
+        $("#judyStudy").hide();
+        $("#judyBeauty").hide();
+        $("#judyTravel").hide();
+        $("#judyCrazy").hide();
+        $("#judyLove").hide();        
+      });        
+      $(document).ready(function(){
+        $("#judyBuyLeft").click(function(){
+          $("#judyBuy").show();
+          $("#judyWork").hide();
+          $("#judyStudy").hide();
+          $("#judyBeauty").hide();
+          $("#judyTravel").hide();
+          $("#judyCrazy").hide();
+          $("#judyLove").hide();        
+        });
+        $("#judyWorkLeft").click(function(){
+          $("#judyBuy").hide();
+          $("#judyWork").show();
+          $("#judyStudy").hide();
+          $("#judyBeauty").hide();
+          $("#judyTravel").hide();
+          $("#judyCrazy").hide();
+          $("#judyLove").hide();        
+        });
+        $("#judyStudyLeft").click(function(){
+          $("#judyBuy").hide();
+          $("#judyWork").hide();
+          $("#judyStudy").show();
+          $("#judyBeauty").hide();
+          $("#judyTravel").hide();
+          $("#judyCrazy").hide();
+          $("#judyLove").hide();        
+        });
+        $("#judyBeautyLeft").click(function(){
+          $("#judyBuy").hide();
+          $("#judyWork").hide();
+          $("#judyStudy").hide();
+          $("#judyBeauty").show();
+          $("#judyTravel").hide();
+          $("#judyCrazy").hide();
+          $("#judyLove").hide();        
+        });
+        $("#judyTravelLeft").click(function(){
+          $("#judyBuy").hide();
+          $("#judyWork").hide();
+          $("#judyStudy").hide();
+          $("#judyBeauty").hide();
+          $("#judyTravel").show();
+          $("#judyCrazy").hide();
+          $("#judyLove").hide();        
+        });
+        $("#judyCrazyLeft").click(function(){
+          $("#judyBuy").hide();
+          $("#judyWork").hide();
+          $("#judyStudy").hide();
+          $("#judyBeauty").hide();
+          $("#judyTravel").hide();
+          $("#judyCrazy").show();
+          $("#judyLove").hide();        
+        });
+        $("#judyLoveLeft").click(function(){
+          $("#judyBuy").hide();
+          $("#judyWork").hide();
+          $("#judyStudy").hide();
+          $("#judyBeauty").hide();
+          $("#judyTravel").hide();
+          $("#judyCrazy").hide();
+          $("#judyLove").show();        
+        });
+      });
+    </script>
+  </head>
+  
+  <body>
+    <div id="csharp">
+      <div>        
+        <h1 class="listhead" align="center">金</h1>
+        <ul>
+          <li><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/pages/bookmarks.html">书签维护</a></li>
+          <li><a href="https://github.com/Kingofhevil">Kingofhevil</a></li>
+          <li><a href="https://github.com/cnvoibook">cnvoibook</a></li>
+          <li><a href="http://stackoverflow.com/">Stack Overflow</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+          <li><a href="https://www.google.com/">google</a></li>
+          <li><a href="https://translate.google.cn/">谷歌翻译</a></li>
+          <li><a href="http://www.baidu.com/">百度 <span style="color:red;"><strong>↑</strong></span></a></li>
+          <li><a href="http://global.bing.com/">bing</a></li>
+          <li><a href="https://www.yahoo.com/">Yahoo</a></li>
+          <li><a href="http://www.ask.com/">Ask</a></li>
+          <li><a href="http://www.aol.com/">Aol</a></li>
+          <li><a href="https://www.sogou.com/">搜狗</a></li>
+          <li><a href="http://www.aol.com/">Aol</a></li>
+          <li><a href="https://nvdacn.com/">读屏软件NVDA</a></li>
+          <li><a href="https://www.json.cn/">json在线解析</a></li>
+          <li><a href="https://docs.oracle.com/javase/8/docs/api/">javase-8-docs-api</a></li>
+          <li><a href="https://developer.android.google.cn/index.html">Android Developer CN</a></li>
+          <li><a href="http://developer.android.com/">Android Developer</a></li>
+          <li><a href="http://www.androiddevtools.cn/">androiddevtools</a></li>
+          <li><a href="http://githubrank.com/">githubrank</a></li>
+          <li><a href="https://redis.io/">redis</a></li>
+          <li><a href="http://www.redis.cn/">redis.cn</a></li>
+          <li><a href="https://www.mongodb.com/">mongodb</a></li>
+          <li><a href="https://rethinkdb.com/">rethinkdb</a></li>
+          <li><a href="https://webrtc.org/">webrtc</a></li>
+          <li><a href="http://projects.spring.io/spring-boot/">spring-boot</a></li>
+          <li><a href="http://kingofhevil.github.io/pages/voiceRecongntion_intelligentGlass.html">语音识别+智能眼镜</a></li>
+          <li><a href="https://www.kernel.org/">kernel</a></li>
+          <li><a href="http://www.ubuntu.com/">ubuntu</a></li>
+          <li><a href="http://source.android.com/">source.android</a></li>
+          <li><a href="http://www.apache.org/">apache</a></li>
+          <li><a href="http://www.lighttpd.net/">lighttpd</a></li>
+          <li><a href="http://dict.youdao.com/">有道词典</a></li>
+          <li><a href="http://www.google.cn/maps">谷歌地图</a></li>
+          <li><a href="http://ditu.amap.com/">高德地图</a></li>
+          <li><a href="http://map.baidu.com/">百度地图</a></li>
+          <li><a href="http://www.rfc-editor.org/">rfc</a></li>
+          <li><a href="https://www.centos.org/">centos</a></li>
+          <li><a href="https://tiddlywiki.com/">tiddlywiki</a></li>
+          <li><a href="https://cn.vuejs.org/">vue</a></li>
+          <li><a href="https://wiki.kde.org/">KDE Wikis</a></li>
+          <li><a href="https://www.kde.org/">kde.org</a></li>
+          <li><a href="http://search.maven.org/">Central Repository</a></li>
+          <li><a href="http://www.mvnrepository.com/">mvnrepository</a></li>
+          <li><a href="http://projects.spring.io/spring-framework/">Spring Framework</a></li>
+          <li><a href="http://hibernate.org/orm/">Hibernate Orm</a></li>
+          <li><a href="http://struts.apache.org/">Struts</a></li>
+          <li><a href="https://www.playframework.com/">Play Framework</a></li>
+          <li><a href="http://jquery.com/">jQuery</a></li>
+          <li><a href="http://materializecss.com/">materializecss</a></li>
+          <li><a href="http://www.bootcss.com/">Bootstrap</a></li>
+          <li><a href="http://dojotoolkit.org/">dojo</a></li>
+          <li><a href="http://maven.apache.org/">Maven</a></li>
+          <li><a href="http://www.eclipse.org/">eclipse</a></li>
+          <li><a href="http://www.mysql.com/">MySQL</a></li>
+          <li><a href="http://tomcat.apache.org/">Tomcat</a></li>
+          <li><a href="https://opencv.org/">opencv</a></li>
+          <li><a href="https://nodejs.org/en/">Node.js</a></li>
+          <li><a href="http://nodejs.cn/">Node.cn</a></li>
+          <li><a href="https://electronjs.org/">electronjs</a></li>
+          <li><a href="https://socket.io/">socketio</a></li>
+          <li><a href="http://firefox.com.cn">Firefox</a></li>
+          <li><a href="https://startups.microsoft.com ">microsoft.startups</a></li>
+          <li><a href="http://www.microsoft.com/en-us/">microsoft</a></li>
+          <li><a href="http://www.oracle.com/technetwork/java/index.html">Oracle </a></li>
+          <li><a href="http://www.cisco.com/">cisco</a></li>          
+          <li><a href="http://www.w3.org/">w3.org</a></li>          
+          <li><a href="http://www.unicode.org/">unicode</a></li>
+          <li><a href="https://notepad-plus-plus.org/">notepad++</a></li>
+          <li><a href="http://editorconfig.org/">editorconfig</a></li>          
+          <li><a href="http://www.owasp.org/">OWASP</a></li>
+          <br>
+          <li><a href="http://bbs.csdn.net/home">CSDN</a></li>
+          <li><a href="http://www.itheima.com/">黑马程序员</a></li>
+          <li><a href="http://www.codecademy.com/zh/learn">Codecademy</a></li>
+          <li><a href="http://gac.codeplex.com/">codeplex</a></li>
+          <li><a href="http://linux.vbird.org/">鸟哥私房菜</a></li>
+          <li><a href="http://sourceforge.net/">sourceforge</a></li>
+          <li><a href="https://www.livecoding.tv/">LiveCoding</a></li>
+          <li><a href="http://www.pjsip.org/">pjsip</a></li>
+          <li><a href="http://www.linphone.org/">linphone</a></li>
+          <li><a href="http://htk.eng.cam.ac.uk/">HTK</a></li>
+          <li><a href="https://www.bluetooth.com/">SIG</a></li>
+          <li><a href="https://www.kernel.org/pub/software/scm/git/docs/">git(1) Manual Page </a></li>
+          <li><a href="http://open.aispeech.com/doc">AISpeech-SDK-api</a></li>
+          <li><a href="http://docs.oracle.com/cd/E17802_01/products/products/servlet/2.5/docs/servlet-2_5-mr2/">javax.servlet-api</a></li>
+          <li><a href="http://struts.apache.org/maven/struts2-core/apidocs/index.html">struts-2-core-2.3.20-api</a></li>
+          <li><a href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/">Hibernate-4.3.10.Final</a></li>
+          <li><a href="http://docs.spring.io/spring/docs/4.1.7.RELEASE/javadoc-api/">Spring-4.1.7.RELEASE</a></li>
+          <li><a href="http://docs.spring.io/spring-security/site/docs/4.0.2.RELEASE/apidocs/">Spring Security 4.0.2.RELEASE API</a></li>
+          <li><a href="http://dev.mysql.com/doc/refman/5.7/en/">MySQL 5.7 Reference Manual</a></li>
+          <li><a href="http://kingofhevil.github.io/pages/perpetualCalendar.html">perpetualCalendar</a></li>
+          <li><a href="http://kingofhevil.github.io/pages/colorCode.html">colorCode</a></li>
+          <li><a href="http://mdo.github.io/code-guide/">code-guide</a></li>
+        </ul>
+      </div>      
+      <div>
+        <h1 align="center">木</h1>
+        <ul>
+          <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html">Apple Distribution Guide</a></li>
+          <li><a href="https://chat.deepseek.com/">deepseek</a></li>
+          <li><a href="https://yuanbao.tencent.com/chat/naQivTmsDa">元宝</a></li>
+          <li><a href="https://codenews.cc/chatgpt">chatgpt</a></li>
+          <li><a href="https://kimi.moonshot.cn/">kimi</a></li>
+          <li><a href="https://www.doubao.com/chat/">豆包</a></li>
+          <li><a href="https://idea.pooksh.com/zpqf/workplace">智璞千帆</a></li>
+          <li><a href="https://adnet.qq.com/">优量汇</a></li>
+          <li><a href="https://www.pgyer.com/">测试</a></li>
+          <li><a href="https://www.icloud.com/">iCloud</a></li>
+          <li><a href="https://appstoreconnect.apple.com/">Appstore Connect</a></li>
+          <li><a href="https://developer.apple.com/">Apple 开发平台</a></li>
+          <li><a href="https://developer.apple.com/library/content/releasenotes/General/ValidateAppStoreReceipt/Introduction.html">Apple Pay</a></li>
+          <li><a href="https://itunes.apple.com/cn/app/%E9%9F%B3%E4%B9%A6/id1188210983">音书——App Store</a></li>
+          <li><a href="https://play.google.com/apps/publish/">Google Player</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.voibook.voicebook">音书——Google Player</a></li>
+          <li><a href="https://developer.huawei.com/consumer/cn/console#/openCard/AppService/4">华为</a></li>
+          <li><a href="http://app.hicloud.com/app/C10788944">音书——华为</a></li>
+          <li><a href="https://dev.mi.com/myitems/0/0?userId=85304865">小米商店</a></li>
+          <li><a href="http://app.mi.com/details?id=com.voibook.voicebook">音书——小米商店</a></li>
+          <li><a href="https://open.oppomobile.com/user/admin#/resource/list">OPPO</a></li>
+          <li><a href="https://developer.vivo.com.cn/application/manage/searchApplication">vivo</a></li>
+          <li><a href="http://developer.meizu.com/console/apps/app/list?r_id=70eea133-c53f-4f21-b5e2-897c077a6561">魅族</a></li>
+          <li><a href="http://app.meizu.com/apps/public/detail?package_name=com.voibook.voicebook">音书——魅族</a></li>
+          <li><a href="http://open.lenovo.com/developer/">联想</a></li>
+          <li><a href="https://www.lenovomm.com/search?key=%E9%9F%B3%E4%B9%A6">音书——联想</a></li>
+          <li><a href="http://op.open.qq.com/manage_centerv2/android?owner=993199570&uin=993199570">腾讯开放平台</a></li>
+          <li><a href="http://sj.qq.com/myapp/detail.htm?apkName=com.voibook.voicebook">音书——应用宝电脑端</a></li>
+          <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.voibook.voicebook">音书——应用宝手机端</a></li>
+          <li><a href="http://dev.360.cn/mod3/mobilenavs/index?_=2726808135">360移动开发平台</a></li>
+          <li><a href="http://dev.360.cn/mod3/mobileapp/?qid=2726808135&appid=203407261">音书——360</a></li>
+          <li><a href="http://app.baidu.com/apps/">百度手机助手</a></li>
+          <li><a href="http://shouji.baidu.com/s?wd=%E9%9F%B3%E4%B9%A6&data_type=app&f=header_software%40input%40btn_search">音书——百度手机助手</a></li>
+          <li><a href="http://aliapp.open.uc.cn/app/mng/index">阿里应用分放平台</a></li>
+          <li><a href="http://www.wandoujia.com/apps/com.voibook.voicebook">音书——豌豆荚</a></li>
+          <li><a href="http://www.coolapk.com/">酷安</a></li>
+          <li><a href="https://www.coolapk.com/apk/132622">音书——酷安</a></li>
+          <li><a href="http://open.appgionee.com/">金立开放平台</a></li>
+          <li><a href="http://www.anzhuoapk.com/apps-13-1/166069/">音书——金立开放平台</a></li>
+          <li><a href="http://dev.smartisan.com/">锤子</a></li>
+          <li><a href="http://www.anzhi.com/index.html">安智</a></li>
+          <li><a href="http://www.anzhi.com/soft_2747730.html">音书——安智</a></li>
+          <li><a href="http://seller.samsungapps.com/">三星开放平台</a></li>
+          <li><a href="http://search.liqucn.com/s.php?words=%E9%9F%B3%E4%B9%A6">音书——历趣市场</a></li>
+          <li><a href="http://iot.weixin.qq.com/">微信硬件平台</a></li>
+          <li><a href="https://connect.qq.com/">QQ互联</a></li>
+          <li><a href="https://minapp.com/miniapp/">小程序</a></li>
+          <li><a href="https://open.weixin.qq.com/">微信开放平台</a></li>
+          <li><a href="https://mp.weixin.qq.com/">微信公众平台</a></li>
+          <li><a href="http://pay.weixin.qq.com/">微信商户平台</a></li>
+          <li><a href="https://work.weixin.qq.com/">微信企业号</a></li>
+          <li><a href="http://open.weibo.com/">微博开放平台</a></li>
+          <li><a href="http://lbs.amap.com/">高德开放平台</a></li>
+          <li><a href="http://testit.miui.com/">小米test</a></li>
+          <li><a href="http://mqc.aliyun.com/">阿里test</a></li>
+          <li><a href="http://mtc.baidu.com/">百度test</a></li>
+          <li><a href="http://wetest.qq.com">wetest</a></li>
+          <li><a href="http://www.testin.cn/">testin</a></li>
+          <li><a href="http://utest.21kunpeng.com/">优测</a></li>
+          <li><a href="https://www.testbird.com/">TestBird</a></li>
+          <li><a href="https://www.guardsquare.com/en/products/proguard/manual/retrace">retrace</a></li>
+          <br>
+          <li><a href="http://www.aes.org/">AES</a></li>     
+          <li><a href="http://acousticalsociety.org/">ASA</a></li>      
+          <li><a href="http://appft.uspto.gov/netahtml/PTO/index.html">United States Patent</a></li>
+          <li><a href="http://makeappicon.com/">makeappicon</a></li>
+          <li><a href="http://tool.oschina.net/encode?type=3">ascii</a></li>
+          <li><a href="http://www.cockos.com/licecap/">makegif</a></li>
+          <li><a href="http://ph0b.com/">ph0b</a></li>
+          <li><a href="http://blog.csdn.net/guolin_blog">郭霖的博客</a></li>
+          <li><a href="https://course.tianmaying.com/spring-mvc+start#0">Spring Boot入门</a></li>
+          <li><a href="http://blog.csdn.net/luoshengyang">老罗</a></li>
+          <li><a href="http://stormzhang.com/">Android 入门</a></li>
+          <li><a href="https://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html">GitHub秘籍</a></li>
+		      <li><a href="https://developer.mozilla.org/en-US/">developer.mozilla</a></li>
+		      <li><a href="http://w3school.com.cn/index.html">w3school</a></li>
+          <li><a href="http://hukai.me/android-training-course-in-chinese/index.html">Android培训中文 </a></li>
+          <li><a href="https://developers.google.com/">developers.google</a></li>
+          <li><a href="http://www.worldhello.net/gotgithub/">gotgithub</a></li>          
+          <li><a href="https://leetcode.com/">leetcode</a></li>
+          <li><a href="http://developer.baidu.com/map/index.php?title=jspopular">baiduMapAPI</a></li>
+          <li><a href="http://fex.baidu.com/ueditor/">ueditor</a></li>
+          <br>
+          <li><a href="http://www.w3.org/TR/html/">html5</a></li>        
+          <li><a href="http://www.w3.org/html/wg/drafts/html/master/Overview.html">html5(office?)</a></li>
+          <li><a href="http://diveintohtml5.info/">DIVE INTO HTML5</a></li>
+          <li><a href="http://dev.w3.org/html5/html-author/">html5(simple)</a></li>
+          <li><a href="http://docs.jboss.org/hibernate/orm/4.2/devguide/en-US/html/">hibernate</a></li>
+          <li><a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/">spring</a></li>
+          <li><a href="http://docs.spring.io/spring-security/site/docs/4.0.2.RELEASE/reference/htmlsingle/">spring security</a></li>
+          <li><a href="http://www.ibm.com/developerworks/cn/java/j-lo-servlet/">servlet入门</a></li>
+          <li><a href="http://stamen.iteye.com/blog/1497981">spring入门</a></li>
+          <li><a href="http://www.iteye.com/blogs/subjects/springmvc-explore">springMVC入门</a></li>
+          <li><a href="http://www.ibm.com/developerworks/cn/views/web/libraryview.jsp?view_by=search&sort_by=Date&sort_order=desc&view_by=Search&search_by=%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0+Dojo&dwsearch.x=14&dwsearch.y=14">dojo入门</a></li>
+          <li><a href="http://blog.csdn.net/jackpk/article/details/7655777">eclipse debug</a></li>
+          <li><a href="http://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html">Dojo Mobile</a></li>          
+          <li><a href="http://getbootstrap.com/">Bootstrap(en-US)</a></li>
+          <li><a href="http://www.bootcss.com/">Bootstrap(zh-CN)</a></li>
+          <li><a href="http://dev.mysql.com/doc/refman/5.7/en/">mysql</a></li>
+          <li><a href="http://tomcat.apache.org/tomcat-8.0-doc/index.html">tomcat</a></li>
+          <br>
+          <li><a href="http://code.google.com/codejam/apactest">code.google</a></li>
+          <li><a href="https://msdn.microsoft.com/zh-cn/default.aspx">msdn.microsoft</a></li>          
+          <li><a href="https://developer.apple.com/">developer.apple</a></li>
+          <li><a href="http://www.dnb.com/">邓白氏</a></li>          
+          <li><a href="https://developers.google.com/glass/develop/overview">google.glass.developer</a></li>          
+          <br>
+          <li><a href="http://www.w3.org/standards/techs/css#w3c_all">CSS</a></li>
+          <li><a href="http://www.w3.org/standards/techs/js#w3c_all">JavaScript</a></li>  
+          <li><a href="https://v2ex.com/">v2ex</a></li>
+          <br>
+          <li><a href="http://asmallorange.com/">asmallorange</a></li>
+          <li><a href="http://www.dailyrazor.com/">dailyrazor</a></li>
+          <li><a href="http://www.lunarpages.com/">lunarpages</a></li>
+          <br>
+          <li><a href="http://edition.cnn.com/2010/TECH/02/09/deaf.internet.captions/index.html">Ken Harrenstein</a></li>
+          <li><a href="http://www.urbandictionary.com/">urbandictionary</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1 align="center">水</h1>
+        <ul>
+          <li><a href="http://www.voibook.com/">广州音书科技有限公司</a></li>
+          <li><a href="https://creator.douyin.com/content/upload">抖音</a></li>          
+          <li><a href="https://cp.kuaishou.com/article/publish/video">快手</a></li>          
+          <li><a href="https://account.bilibili.com/account/home">bilibili</a></li> 
+          <li><a href="https://pro.voibook.com/adm/">Adm</a></li>
+          <li><a href="https://qidian.qq.com/module/service.html">企点客服</a></li>
+          <li><a href="https://console.qidian.qq.com/login/?show_type=aq&source=workbench">企点基础版客服</a></li>
+          <li><a href="https://tccc.qcloud.com/saas-manage/">客服系统后台</a></li>
+          <li><a href="https://pro.voibook.com/adm">管理后台</a></li>
+          <li><a href="https://pro.voibook.com/bfts/web/info-admin/">无障碍教学系统信息后台</a></li>
+          <li><a href="http://v.qq.com/vplus/2eabc753bef68ddbd04b9ab5d52a45d8">音书视频</a></li>
+          <li><a href="https://liliu-avril.github.io/">刘李l<a></li>
+          <li><a href="http://node.voibook.com:7070">RAP</a></li>
+          <li><a href="http://kingofhevil.github.io/judy/voibook/">广州音书科技有限公司-Github</a></li>
+          <li><a href="https://www.cwicommunity.com/">CWI</a></li>
+          <li><a href="https://www.linkedin.com/">linkedin</a></li>
+          <li><a href="https://legacy.gitbook.com/">gitbook</a></li>
+          <li><a href="https://app.yinxiang.com/Home.action">印象笔记</a></li>
+          <li><a href="https://workbench.umeng.com/home">友盟</a></li>
+          <li><a href="https://shuidiai.feishu.cn/mail">飞书邮箱</a></li>
+          <li><a href="https://exmail.qq.com/login">腾讯企业邮</a></li>
+          <li><a href="https://outlook.office365.com/">内邮</a></li>
+          <li><a href="https://mail.qq.com">QQ邮箱</a></li>
+          <li><a href="https://mail.google.com/mail/#inbox">Gmail</a></li>       
+          <li><a href="https://docs.qq.com/desktop">腾讯文档</a></li>
+          <li><a href="https://weread.qq.com/">微信阅读</a></li>
+          <li><a href="https://www.processon.com/">processon</a></li>
+          <li><a href="https://docs.node.voibook.com/">接口文档</a></li>
+          <li><a href="https://www.tapd.cn/my_dashboard">Tapd</a></li>
+          <li><a href="https://app.mockplus.cn/">摹客</a></li>
+          <li><a href="https://lanhuapp.com/">蓝湖</a></li>
+          <li><a href="https://mubu.com/">幕布</a></li>
+          <li><a href="http://mail.163.com/">163邮箱</a></li>
+          <li><a href="http://wj.qq.com/">腾讯问卷</a></li>
+          <li><a href="http://www.diaochapai.com/report/ec8d17d0-1e34-459c-a268-46052e61f8b6">调查派</a></li>
+          <li><a href="http://wj.qq.com/survey.html?id=291876&hash=a295">实时翻译软件问卷</a></li>
+          <li><a href="http://www.diaochapai.com/survey1385082/">谷歌眼镜问卷</a></li>
+          <li><a href="https://wj.qq.com/s/560218/1246">WatchVoice眼镜问卷</a></li>
+          <li><a href="https://wj.qq.com/s/632030/0997/">意见反馈</a></li>
+          <li><a href="http://kingofhevil.github.io/pages/acoustics.html/">acoustics</a></li>
+          <li><a href="http://kingofhevil.github.io/socialnetwork/">memorandum</a></li>
+          <li><a href="http://www.iflytek.com/">科大讯飞</a></li>
+          <li><a href="http://www.horizon-robotics.com/index_cn.html">地平线机器人</a></li>          
+          <li><a href="https://www.azure.cn/cognitive-services/zh-cn/speech-api">微软语音</a></li>
+          <li><a href="http://www.rejointech.com.cn/index.php">瑞杰珑</a></li>
+          <li><a href="http://www.aispeech.com/">思必驰</a></li>
+          <li><a href="http://www.unisound.com/">云知声</a></li>
+          <li><a href="https://www.chumenwenwen.com/">出门问问</a></li>
+          <li><a href="http://www.znstartups.com/">紫牛基金</a></li>
+          <li><a href="http://www.xfyun.cn/venture/venture">粒子空间</a></li>
+          <br>
+         
+          <li><a href="https://clinicaltrials.gov/ct2/show/NCT02132130?term=Safety,+Tolerability+and+Efficacy+for+CGF166+in+Patients+With+Bilateral+Severe-to-profound+Hearing+Loss&rank=1">NCT02132130</a></li>
+          <li><a href="http://entcolumbia.org/research/clinical-trials/find-clinical-trial/study-gene-therapy-cgf166-patients-severe-profound-hearing-loss">CGF166</a></li>
+          
+          <li><a href="http://www.motorola.com.cn/products/moto-360">moto360</a></li>
+          <li><a href="http://www.nuance.com">nuance</a></li>
+          <li><a href="http://www.bestapp.us/">bestapp</a></li>
+          <li><a href="http://www.glassx.cn/">glassx</a></li>
+          <li><a href="http://www.kingsee.cc/">0glass</a></li>
+          <li><a href="http://www.glassup.net">glassup</a></li>
+          <li><a href="http://glxss.llvision.com/">GLXSS</a></li>   
+          <li><a href="http://www.irunway.cn/">湾润</a></li>   
+          <li><a href="http://tianshengyongchuang.com/index.php">XMars</a></li>             
+          <li><a href="http://www.ofo.so/">北京拜克洛克科技有限公司</a></li>
+          <li><a href="http://mobike.com/">摩拜单车</a></li>          
+          <li><a href="https://www.xloong.com/">枭龙</a></li>
+          <li><a href="http://www.insenth.com/cn/index.html">Insenth</a></li>          
+          <li><a href="http://www.technabling.co.uk/">technabling</a></li>
+          <li><a href="http://www.lenwotion.com/index.asp">盛世任我行</a></li>
+          <li><a href="http://www.shadowcreator.com/">影创科技</a></li>                    
+          <li><a href="https://www.hiscene.com/">亮风台</a></li>
+          <li><a href="http://www.kingsee.cc/">青橙视界</a></li>
+          <li><a href="http://www.journey.ren/">灵犀微光</a></li>
+          <li><a href="http://www.alfareal.com/">众景视界</a></li>
+          <li><a href="http://www.wear0309.com/">中科沃尔</a></li>
+          <li><a href="http://www.lochn.com/">珑璟光电</a></li>
+          <li><a href="http://www.szysk.net/">云时空</a></li>
+          <li><a href="http://www.chuangyemore.com/">创业猫</a></li>
+          <li><a href="http://www.smallzhi.com/">智能360</a></li>
+          <li><a href="http://yuyin.baidu.com/pz.html">百度语音</a></li>
+          <li><a href="http://www.enactuschina.cn/index.aspx">创行</a></li>
+          <li><a href="http://www.uzoo.cn/">虫洞</a></li>
+          <li><a href="http://www.ztspeech.com/">紫东语音</a></li>
+          <li><a href="http://www.sinovoice.com/index.html">捷通华声</a></li>
+          <li><a href="http://www.hotjob.cn/wt/iflytek/web/index?brandCode=1">讯飞招聘</a></li>
+          <li><a href="https://angel.co/ava-me/jobs/apply">Apply to Ava</a></li>
+          <li><a href="http://www.newbd.com/">Lenovo NBD</a></li>
+          <li><a href="http://www.google.com/glass/start/">Google Glass</a></li>
+          <li><a href="https://glass.google.com/setup">Glass Wifi</a></li>
+          <li><a href="http://www.microsoft.com/microsoft-hololens/en-us">hololens</a></li>
+          <li><a href="https://www.indiegogo.com/projects/meet-the-pilot-smart-earpiece-language-translator--2#/">Pilot</a></li>
+        
+          <br>
+          <li><a href="https://cn.wordpress.org/">wordpress</a></li>
+          <li><a href="http://www.51job.com/default.php">前程无忧</a></li>
+          <li><a href="http://campus.chinahr.com/seeker/mycampus/index.asp">中华英才</a></li>
+          <li><a href="http://xiaoyuan.zhaopin.com/">智联</a></li>
+          <li><a href="http://xyzp.haitou.cc/"> 海投</a></li>
+          <br>
+          <li><a href="www.who.int/en/">WHO</a></li>
+          <li><a href="http://www.cdpf.org.cn/">中国残疾人联合会</a></li>
+          <li><a href="http://www.scdpf.org.cn/">四川省残疾人联合会</a></li>
+          <li><a href="http://www.leshan.gov.cn/">乐山市人民政府</a></li>
+          <li><a href="http://www.canyoucn.com/index.htm">残友集团</a></li>
+          <li><a href="http://bbs.cndeaf.com/?nogroups">聋人在线</a></li>
+          <li><a href="http://www.uisdc.com/">优设</a></li>
+          <li><a href="http://www.cubrid.org/blog/tags/Java/">CUBRID</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1 align="center">火</h1>
+        <ul>
+          <li><a href="https://techforgood.qq.com/tools/digitalService/47">手语翻译服务基础版</a></li>
+          <li><a href="https://www.vxichina.cn/">维信VXI </a></li>
+          <li><a href="https://callnovo.com/scn/">Callnovo</a></li>
+          <li><a href="https://weidian.com/?userid=866073152&wfr=qqShare&ifr=shopdetail">音书小店(微店)</a></li>
+          <li><a href="https://shop457421467.taobao.com/">音书小店(淘宝)</a></li>
+          <li><a href="https://mpkf.weixin.qq.com/">音书商城客服</a></li>
+          <li><a href="http://www.ccgp.gov.cn/">中国政府采购网</a></li>
+          <li><a href="https://middle.zcygov.cn/">政采云</a></li>
+          <li><a href="http://gzswbc.com/index.html">顺为招标采购有限公司</a></li>
+          <li><a href="https://www.gdedulscg.cn/">广东教采云</a></li>
+          <li><a href="https://sop.gzsi.gov.cn/egrantweb/index">阳光政务</a></li>
+          <li><a href="http://pro.gdstc.gd.gov.cn/egrantweb/index?username=ccshi%40voibook.com">2022高新技术企业申报</a></li>
+          <li><a href="https://etax.guangdong.chinatax.gov.cn/xxmh/">广东省电子税务局</a></li>
+          <li><a href="https://www.hkexgroup.com/Sustainability/HKEX-Foundation?sc_lang=zh-HK">香港交易所慈善基金</a></li>
+          <li><a href="https://www.itc.gov.hk/ch/index.html">香港创新科技署</a></li>
+          <li><a href="http://www.ymcahk.org.hk/">YMCA-香港基督教青年会</a></li>
+          <li><a href="https://pssb.gba-base.com/sys/login">粤港澳基地管理后台</a></li>
+          <li><a href="https://etax.jiangsu.chinatax.gov.cn/sso/login">江苏省电子税务局</a></li>
+          <li><a href="https://rs.jshrss.jiangsu.gov.cn/index/">江苏人社网办大厅</a></li>
+          <li><a href="https://zmn.csdsj.net/gxq-webapp/uso/cas-login">常熟声谷精英人才</a></li>
+          <li><a href="https://218.4.44.189:8443/qypt/#/passport/login">常熟企业政务服务平台</a></li>
+          <li><a href="http://qy.cszhcs.cn/Changshu_Tech/Changshu_Tech/login.aspx?ReturnUrl=%2fChangshu_Tech%2fRegisterUserFront%2fEpointWorkflow%2fPages%2fClient%2fCommon%2fHandle_Main.aspx%3fProcessVersionInstanceGuid%3d66219659-6643-451f-be9c-bcec006eb44a%26WorkItemGuid%3d0e58dffb-1754-4e99-bee9-e9459162e5c6%26MessageItemGuid%3d33b32b27-20bb-4103-b8de-93a2f40e3845&ProcessVersionInstanceGuid=66219659-6643-451f-be9c-bcec006eb44a&WorkItemGuid=0e58dffb-1754-4e99-bee9-e9459162e5c6&MessageItemGuid=33b32b27-20bb-4103-b8de-93a2f40e3845">昆承英才</a></li>
+          <li><a href="http://kjxm.szkj.gov.cn/index/index.jspx#">姑苏天使</a></li>
+          <li><a href="https://dw.gzgjj.gov.cn/wsyw">广州市住房公积金管理中心</a></li>
+          <li><a href="https://ggfw.gdhrss.gov.cn/gdggfw-qy/">单位社保</a></li>
+          <li><a href="https://jpfw.gdcd.gov.cn/Index.html">广东省驾驶培训公众服务网</a></li>
+          <li><a href="http://zwfw.gzonline.gov.cn/gzf-wssb/gzf/index">公租房</a></li>
+          <li><a href="https://gzsti.gzsi.gov.cn/">广州科技大脑</a></li>
+          <li><a href="http://gzlss.hrssgz.gov.cn/gzlss_web/">广东政务服务网</a></li>
+          <li><a href="https://fuwu.most.gov.cn/">科技部火炬</a></li>
+          <li><a href="http://gsxt.saic.gov.cn/">全国企业信用信息公示系统</a></li>
+          <li><a href="https://www.qixin.com/">企信宝</a></li>
+          <li><a href="http://www.tianyancha.com/">企业信息-天眼查</a></li>
+          <li><a href="http://www.xiniudata.com/">烯牛数据</a></li>
+          <li><a href="http://wsjs.saic.gov.cn/">商标局</a></li>
+          <li><a href="http://www.baiten.cn/">专利查询</a></li>
+          <li><a href="http://fee.sipo.gov.cn/">专利缴费</a></li>
+          <li><a href="http://www.sipo.gov.cn/">中华人民共和国国家知识产权局</a></li> 
+          <li><a href="http://wsns.gddpf.org.cn/NewModules/HomePage.aspx">残疾人保证金</a></li>
+          <li><a href="http://wsla.gzcourt.org.cn/">广州法院</a></li>
+          <li><a href="http://www.foundationcenter.org.cn/">基金会中心网</a></li>
+          <li><a href="https://www.yu-e.org/index.dhtml">与益</a></li>
+          <li><a href="http://chaofan.wang/">超凡网</a></li>
+          <li><a href="https://web.gongfudou.com/#/index">小白智慧打印</a></li>
+          <li><a href="https://www.ilovepdf.com/zh-cn">ilovepdf</a></li>
+          <li><a href="https://tool.browser.qq.com/">QQ浏览器工具箱</a></li>
+          <li><a href="https://cli.im/url">草料二维码</a></li>
+          <li><a href="https://zyin.cc/index">宅印</a></li>
+          <li><a href="https://h.chanjet.com/">好会计</a></li>
+          <li><a href="https://foundershub.startups.microsoft.com/">微软加速器</a></li>
+          <li><a href="https://portal.azure.com/#home">Azure</a></li>
+          <li><a href="https://admin.microsoft.com/">Microsoft365</a></li>
+          <li><a href="https://qteng.qq.com/">青腾大学</a></li>
+          <li><a href="https://www.miracleplus.com/">奇绩创坛</a></li>
+          <li><a href="https://angelfund.stefg.org/seeyon/index.jsp">上海市大学生创业基金会</a></li>
+          <li><a href="https://yzbm.tsinghua.edu.cn/TXlIZWFydFdpbGxHb09ubmR6cy94bXp6cy94bXpibWsvYm16eC8yMDI2LzIwMjY1OCNhNjUzYTZhYi02ODI5LTRjODYtODZiNC1lY2ZkZGIzM2I3Njg_">清华研究生申请服务系统</a></li>
+          <li><a href="https://www.chinaielts.org/">BC雅思</a></li>
+          <li><a href="https://ielts.itongzhuo.com/business/ielts/student/jumpIeltsQuestionList.do?sSubjects=1&type=4&aiType=0">同桌英语</a></li>
+          <li><a href="https://pgoas.hkust-gz.edu.cn/">香港科技大学广州研究生申请</a></li>
+          <li><a href="https://cs.fdsm.fudan.edu.cn/">复旦学生中心</a></li>
+          <li><a href="http://ehall.fudan.edu.cn">复旦网上办事大厅</a></li>
+          <li><a href="https://thesis.fudan.edu.cn">复旦论文管理系统</a></li>
+          <li><a href="https://webvpn.fudan.edu.cn/">复旦图书馆webvpn</a></li>
+          <li><a href="https://fdsmonline.mh.chaoxing.com/">复旦在线教育</a></li>
+          <li><a href="https://online.ifudan.cn/detail/p_5fe176d1e4b0231ba88e2cdc/6">复旦MBA考研网课</a></li>
+          <li><a href="https://apply.fdsm.fudan.edu.cn/fdmba/home">复旦MBA招生系统</a></li>
+          <li><a href="https://study.insead.edu/app/3280/home">INSEAD</a></li>
+          <br>
+          <li><a href="https://gzrsj.hrssgz.gov.cn/vsgzhr/login_home.aspx">广州市人才绿卡</a></li>
+          <li><a href="https://pyrc.panyu.gd.cn">番禺区产业人才政策</a></li>
+          <li><a href="http://www.gdltax.gov.cn/">广东省地方税务局</a></li>
+          <li><a href="http://www.gdzwfw.gov.cn/">广东政务服务网</a></li>
+          <li><a href="http://www.gzaic.gov.cn/">广州红盾信息网</a></li>
+          <li><a href="http://www.gzaic.gov.cn/gzaic/Portal/Business/Portal.html">我要办事</a></li>
+          <li><a href="http://www.sda.gov.cn/WS01/CL1026/">CFDA医疗器械</a></li>
+          <br>
+          <li><a href="https://www.zjfdp.org.cn/index">浙江省残疾人福利基金会</a></li>
+          <li><a href="https://love.alipay.com/donate/itemDetail.htm?name=2022021414433226920">聋人课堂的翻译家</a></li>
+          <li><a href="https://www.dbs.com/foundation/default.page">星展银行</a></li> 
+          <li><a href="http://www.sdsocialservice.com/">顺德社会服务交易所</a></li>
+          <li><a href="http://sdop.gongyi.la/">顺德社创</a></li>
+          <li><a href="https://cszg.mca.gov.cn/">慈善中国</a></li>
+          <li><a href="https://welfare.bytedance.com/">字节跳动公益</a></li>
+          <li><a href="https://love.alipay.com/donate/index.htm">支付宝公益</a></li>
+          <li><a href="https://ssv.tencent.com/">腾讯SSV</a></li>
+          <li><a href="https://techforgood.qq.com/#/vc">腾讯技术公益</a></li>
+          <li><a href="https://open.gongyi.qq.com">腾讯公益</a></li>
+          <li><a href="https://vol.qq.com/web/home">公益志愿者平台</a></li>
+          <li><a href="https://www.lingxi360.com/">灵析</a></li>
+          <li><a href="http://yxjh.ginkgofoundation.org/">银杏计划</a></li>
+          <li><a href="https://www.asha.org/">美国言语语言听力协会</a></li>
+          <li><a href="https://zeroproject.org/">zeroproject</a></li>
+          <li><a href="https://www.echoinggreen.org/">echoinggreen</a></li>
+          <li><a href="http://xsxs.cyol.com/">好青年</a></li>
+          <li><a href="https://www.yptalent.cn/home?id=home">杨浦创业之星</a></li>
+          <li><a href="https://www.fdsti.cn/portal/app/b86dec80-8ebd-4193-b5d8-a5499a51e58e/637107f86d1d457fc41f1dff/6371082d6d1d457fc41f1e00">长三角聚劲科创大赛</a></li>
+          <li><a href="https://cxcyds.chinatorch.org.cn/index.php/index/index/index.html">中国创新创业大赛2022</a></li>
+          <li><a href="http://www.cxcyds.com/">中国创新创业大赛</a></li>
+          <li><a href="http://gzlss.hrssgz.gov.cn/cas/login">广东省人力资源和社会保障局</a></li>
+          <li><a href="http://www.chuangyeshunde.com/">创业顺德</a></li>
+          <li><a href="http://sdief.org/">顺德双创公益基金</a></li>
+          <li><a href="https://gicreg.wicwuzhen.cn/conf_competition/company/step2">世界互联网大会</a></li>
+          <li><a href="http://dasai.cncf.org.cn/">中国公益慈善项目大赛</a></li>
+          <li><a href="http://e.elecfans.com/hicc/index.html">中国硬件创新大赛</a></li>
+          <li><a href="http://iac2016.csdn.net/">信息无障碍大赛</a></li>
+          <li><a href="http://www.gzsi.gov.cn/">广州市科技创新委员会</a></li>
+          <li><a href="http://www.chtf.com/">高交会</a></li>
+          <li><a href="http://www.cantonrehacare.com/">康复展览会</a></li>
+          <li><a href="https://fr.tlscontact.com/visa/cn/cnCAN2fr/home">法国签证申请</a></li>
+          <li><a href="https://ceac.state.gov/GenNIV/Default.aspx">美国签证申请</a></li>
+          <li><a href="https://cgifederal.secure.force.com/">美国签证面签</a></li>
+          <br>
+          <li><a href="http://ava.me/">ava</a></li>
+          <li><a href="http://www.incus.com.cn/">音科</a></li>
+          <li><a href="https://madgaze.com/x5/cn/">madgaze</a></li>
+          <li><a href="http://madgaze.com/sdk/">madgazesdk</a></li>
+          <li><a href="http://www.pedius.org/en/">Pedius</a></li>
+          <li><a href="https://rogervoice.com/">RogerVoice</a></li>
+          <li><a href="http://xinsheng.im/">心声</a></li>
+          <li><a href="http://www.deaflife.cn/">声活</a></li>
+          <li><a href="http://www.voiceofhand.com">手之声</a></li>
+          <li><a href="http://www.motionsavvy.com/">motionsavvy</a></li>
+          <li><a href="http://fiveapp.mobi/">FiveApp</a></li>
+          <li><a href="https://www.usound.co/">Usound</a></li>
+          <li><a href="http://www.hearall.cn/">壹听</a></li>
+          <li><a href="http://www.cslized.com/">随手执梦</a></li>
+          <li><a href="https://www.jhhearingaids.com/">锦好医疗</a></li>
+          <li><a href="https://eargo.com/">耳朵树</a></li>
+          <li><a href="http://www.earmedicalmap.com/">耳朵树</a></li>
+          <li><a href="http://www.nurotron.com/home">诺尔康</a></li>
+          <li><a href="http://www.shlst.com.cn/">力声特</a></li>
+          <li><a href="http://aic-aic.com/">爱益声</a></li>
+          <li><a href="http://www.cochlear.com/wps/wcm/connect/us/home">科利耳</a></li>
+          <li><a href="http://www.medel.com/">MED</a></li>
+          <li><a href="https://www.advancedbionics.com/content/advancedbionics/us/en/home.html">AB</a></li>
+          <li><a href="http://www.aibabel.com/">分音塔科技</a></li>
+          <li><a href="http://www.szcradle.com/">晴晴言语</a></li>
+          <li><a href="http://www.xuechunyu.com/">学唇语网</a></li>
+          <br>          
+          <li><a href="http://www.knowles.com/index.php/chi_cn">楼氏</a></li>
+          <li><a href="http://www.aactechnologies.com/cn/">瑞声</a></li>
+          <li><a href="http://www.goertek.com/index.htm/">歌尔</a></li>
+          <li><a href="http://www.fortemedia.com./index.html">富迪</a></li>
+          <li><a href="http://www.conexant.com/">科胜讯</a></li>
+          <li><a href="http://soundonline.org/">声学在线</a></li>
+          <li><a href="http://xlwangnu.blog.163.com/blog/#m=0&t=3&c=聲學">王新龙的博客/a></li>
+          <li><a href="https://atap.google.com/soli/">Soli</a></li>
+          <li><a href="http://192.168.31.1/">小米路由</a></li>          
+          <br>          
+          <li><a href="http://www.formastudio.dk/">formstudio</a></li>          
+          <br>
+          <li><a href="http://www.himax.com.tw/zh/products/microdisplay-products/color-filter-lcos/hx7097/">奇景光电hx7097</a></li>
+          
+          <li><a href="http://www.lochn.com/">珑璟光电</a></li>
+          <li><a href="http://www.syndiant.com/">Syndiant</a></li>
+          <li><a href="http://www.displaytech-us.com/">DisplayTech</a></li>
+          <li><a href="http://www.senseye.com.tw/">神采光电</a></li>
+          <li><a href="http://www.crystal-optech.com/Home/Index/index.html">水晶光电</a></li>
+          <li><a href="http://www.sunnyoptical.com/default.html">舜宇光电</a></li>
+          <li><a href="http://www.zjcdt.com">晶景光电</a></li>
+          <li><a href="http://www.szcsot.com/">华星光电</a></li>
+          <li><a href="http://www.auo.com/">友达光电</a></li>
+          <li><a href="http://www.tianma.cn/">天马光电</a></li>
+          <li><a href="http://www.everdisplay.com/">和辉光电</a></li>
+          <li><a href="http://www.lida-oe.com/">利达光电</a></li>
+          <li><a href="http://www.boe.com/">京东方</a></li>
+          <li><a href="http://www.fshuaguo.com/">华国光学</a></li>
+          <li><a href="http://www.yxopt.com/">永新光学</a></li>
+          <br>
+          <li><a href="http://www.ti.com/product/OMAP4460">OMAP4460（new glass）</a></li>
+          <li><a href="http://www.ti.com/product/OMAP4430">OMAP4430（google glass）</a></li>
+          <li><a href="http://www.ingenic.cn/?product/id/2.html">M200（cool glass）</a></li>
+          <li><a href="http://www.arm.com/products/processors/cortex-a/cortex-a7.php">Cortex A7（glxss）</a></li>
+          <li><a href="http://www.mediatek.com/zh-TW/products/internet-of-things/wearables/">联发科</a></li>
+          <li><a href="http://www.qualcomm.cn/products/snapdragon/processors/200-series/">骁龙</a></li>
+          <li><a href="http://www.samsung.com/cn/home/">三星</a></li>
+          <li><a href="http://www.nvidia.cn/page/home.html">nvidia</a></li>
+          <li><a href="http://www.marvell.com/">marvell</a></li>
+          <li><a href="http://www.rock-chips.com/">瑞芯微</a></li>
+          <li><a href="http://www.360iot.cn/">塔普</a></li>
+          <li><a href="http://dcesolution.com">创龙</a></li>
+          <li><a href="http://www.madgaze.com/cn/">创龙眼镜</a></li>          
+          <li><a href="http://www.infotmic.com.cn/">盈方微</a></li>
+          <li><a href="http://www.glassesmcu.com/">奥芯</a></li>
+          <li><a href="http://www.jorjin.com.tw/#!smart-glasses/c20yz">佐臻</a></li>
+          <li><a href="http://cht.chipsip.com/">钜景</a></li>
+          <li><a href="http://www.smics.com/chn/index.php">中芯国际</a></li>
+          <li><a href="http://www.chinachip.cn/">华芯飞</a></li>
+          <li><a href="http://www.vimicro.com.cn/">中星微</a></li>
+          <li><a href="http://www.amlogic.cn/">晶晨</a></li>
+          <li><a href="http://www.actions-semi.com/cn/index.aspx">炬力</a></li>
+          <li><a href="http://www.nufront.com/">新岸线</a></li>
+          <li><a href="http://www.allwinnertech.com/index.html">全志</a></li>
+          <li><a href="http://www.spreadtrum.com/cn/">展讯</a></li>
+          <li><a href="http://www.loongson.cn/index.html">龙芯</a></li>
+          <li><a href="http://www.hisilicon.com/">华为海思</a></li>
+          <li><a href="http://www.innofidei.com/">创毅</a></li>
+          <li><a href="http://www.viatech.com/cn/">威盛</a></li>
+          <li><a href="http://www.tsmc.com/chinese/default.htm">台积电</a></li>
+          <li><a href="http://www.umc.com/chinese/">台联电</a></li>
+          <br>
+          <li><a href="https://xiling.cloud.baidu.com/open/overview">百度手语数字人</a></li>
+          <li><a href="https://sign.town/">手语村</a></li>
+          <li><a href="https://vip.aminer.cn/sign/">智慧手语</a></li>
+          <li><a href="http://www.csl-press.com/">手语视点</a></li>
+          <li><a href="http://www.23shouyu.com/">爱手语</a></li>
+          <li><a href="http://www.csr.com/">csr</a></li>
+          <li><a href="http://www.myopenglass.com/make_en/stepbystep_en/">open glass</a></li>
+          <br>
+          <li><a href="https://hi.taobao.com/">淘宝众筹</a></li>
+          <li><a href="https://z.jd.com/sceneIndex.html">京东众筹</a></li>
+          <li><a href="https://www.indiegogo.com/projects/speaksee-be-part-of-the-conversation-apps-bluetooth#/">SpeakSee</a></li>
+          <li><a href="https://www.indiegogo.com/projects/ltccs-the-live-time-closed-captioning-system#/">ltccs</a></li>
+          <li><a href="https://www.indiegogo.com/projects/nuheara-iqbuds-super-intelligent-wireless-earbuds-headphones#/">IQbuds</a></li>
+          <br>
+          <li><a href="http://www.nanfangrencai.com/">南方人才市场</a></li>
+          <li><a href="http://gzlss.hrssgz.gov.cn/">社保</a></li>
+          <li><a href="http://gzrsj.hrssgz.gov.cn/vsgzhr/AdminApply_BYS.aspx">广州市人事电子政务系统</a></li>
+          <li><a href="http://www.gradjob.com.cn/cms/index.html">广东大学生就业在线</a></li>
+          <li><a href="http://my.chsi.com.cn/archive/zxssurvey.action">学信档案</a></li>
+          <li><a href="https://yz.chsi.com.cn/">研招网</a></li>
+          <br>
+          <li><a href="http://www.ted.com/">ted</a></li>
+          <li><a href="http://www.towords.com/">拓词</a></li>
+          <li><a href="http://edition.cnn.com/">edition.cnn</a></li>
+          <br>
+          <li><a href="http://www.jnu.edu.cn/">暨南大学</a></li>
+          <li><a href="http://cet.jnu.edu.cn/cet/default_0.htm">四六级网上报名</a></li>
+          <li><a href="http://fee.jnu.edu.cn/student.aspx">缴费系统</a></li>          
+          <li><a href="http://xxxy.jnu.edu.cn/">信科院</a></li>
+          <li><a href="http://www.researchgate.net/">ResearchGate</a></li>
+          <li><a href="http://www.sciencenet.cn/mathematics/">科学网</a></li>
+          <li><a href="http://www.cnki.net/">中国知网</a></li>
+          <li><a href="http://nianjian.xiaze.com/">夏泽网-中国统计年鉴</a></li>
+          <li><a href="http://www.highwire.stanford.edu/">HighWire</a></li>
+          <li><a href="http://www.sciencedirect.com/">ScienceDirect</a></li>
+          <li><a href="http://ieeexplore.ieee.org/Xplore/dynhome.jsp?tag=1">IEEE Library</a></li>
+          <li><a href="http://onlinelibrary.wiley.com/">Wiley Online Library</a></li>
+          <li><a href="http://www.nature.com/">Nature </a></li>
+        </ul>
+      </div>
+      <div>
+        <h1 align="center">土</h1>
+        <ul>
+          <li><a href="https://www.quora.com/">quora</a></li>
+          <li><a href="https://news.cctv.com/">央视新闻</a></li>
+          <li><a href="http://www.zhihu.com/">知乎</a></li>
+          <li><a href="https://dida365.com/">滴答清单</a></li>
+          <li><a href="https://www.peopleapp.com/newspaper">人民日报</a></li>
+          <li><a href="https://newspaper.gzdaily.cn/pc/paperindex.htm">广州日报</a></li>
+          <li><a href="http://weibo.com/">新浪</a></li>
+          <li><a href="http://36kr.com/">36氪</a></li>
+          <li><a href="http://www.tmtpost.com/">钛媒体</a></li>
+          <li><a href="https://www.pencilnews.cn/">铅笔道</a></li>
+          <li><a href="http://www.toutiao.com/">今日头条</a></li>
+          <li><a href="https://www.coursera.org/">coursera</a></li>
+          <li><a href="http://study.163.com/">网易云课堂</a></li>
+          <li><a href="https://easy.lagou.com/can/index.htm">拉勾</a></li>
+          <li><a href="https://www.zhipin.com/chat/im/">Boss直聘</a></li>
+          <li><a href="https://job.dajie.com/recruit/index?from=left_nav">大街网</a></li>
+          <li><a href="https://cn.100offer.com/">100offer</a></li>
+          <li><a href="http://www.neitui.me/">内推</a></li>
+          <li><a href="https://www.alidayu.com/">阿里大于</a></li>
+          <li><a href="https://home.console.aliyun.com">阿里云</a></li>   
+          <li><a href="https://cloud.tencent.com/">腾讯云</a></li>
+          <li><a href="https://pan.tencent.com/">腾讯企业网盘</a></li>
+          <li><a href="http://pan.baidu.com/disk/home">百度网盘</a></li>
+          <li><a href="https://wetransfer.com/">wetransfer</a></li>
+          <li><a href="https://eyun.baidu.com/enterprise/home">百度网盘企业版</a></li>
+          <li><a href="https://consolev3.ucloud.cn/">Ucloud</a></li>
+          <li><a href="https://www.yuntongxun.com/">容联云</a></li>
+          <li><a href="http://admin.xmpush.xiaomi.com/v2/">小米推送</a></li>
+          <li><a href="https://www.it120.cc/">api工厂</a></li>
+          <li><a href="http://www.iaixin.com/">爱信</a></li>
+          <li><a href="https://www.twilio.com/">Twilio</a></li>
+          <li><a href="http://www.tycc100.com/">天翼云呼</a></li>
+          <li><a href="http://www.qingmayun.com/">轻码云</a></li>
+          <li><a href="http://www.ucpaas.com/">云之讯</a></li>
+          <li><a href="http://www.feiyucloud.com/">飞语</a></li>
+          <li><a href="http://www.weihuitel.com/">微会</a></li>
+          <li><a href="http://www.xfyun.cn/">讯飞云</a></li>
+          <li><a href="https://niutrans.com/">小牛翻译</a></li>
+          <li><a href="https://cloud.aispeech.com/">DUI</a></li>
+          <li><a href="https://www.agora.io/cn/">声网</a></li>
+          <li><a href="https://sg.godaddy.com/zh/">godaddy</a></li>
+          <li><a href="https://www.namecheap.com/">namecheap</a></li>
+          <br>
+          <li><a href="https://www.paypal.com/">paypal</a></li>
+          <li><a href="https://www.alipay.com/">支付宝</a></li>
+          <li><a href="https://www.jd.com/">京东</a></li>
+          <li><a href="http://www.taobao.com/">淘宝</a></li>
+          <li><a href="http://salarycalculator.sinaapp.com/city/guangzhou">工资计算</a></li>
+          <li><a href="https://www.weidian.com/">微店</a></li>
+          <li><a href="https://bitcoin.org/zh_CN/">BitCoin</a></li>
+          <li><a href="http://www.icbc.com.cn/icbc/">中国工商银行</a></li>
+          <li><a href="https://company3.ccb.com/chn/company/index.shtml">中国建设银行</a></li>
+          <li><a href="http://www.citicbank.com/">中信银行</a></li>
+          <li><a href="http://www.pbccrc.org.cn/">中国人民银行征信</a></li>
+          <li><a href="https://www.tshe.com/">T社</a></li>
+          <li><a href="http://www.amazon.cn/">亚马逊</a></li>
+          <li><a href="http://www.xiaomi.com/">小米</a></li>
+          <li><a href="http://www.xgimi.com/">极米</a></li>
+          <li><a href="http://gz.meituan.com/">美团</a></li>
+          <li><a href="https://www.knowroaming.com/">knowroaming</a></li>
+          <br>
+          <li><a href="http://www.douyutv.com/">斗鱼</a></li>
+          <li><a href="https://www.bilibili.com/">bilibili</a></li>
+          <li><a href="http://www.huya.com/">虎牙</a></li>
+          <li><a href="http://www.youku.com/">优酷</a></li>
+          <li><a href="http://www.zywlyy.cn/">电影天堂2</a></li>
+          <li><a href="http://www.dytt8.net/">电影天堂</a></li>
+          <li><a href="http://www.lbldy.com/">炫电影</a></li>
+          <li><a href="http://www.btwhat.info/">BT搜索</a></li>
+          <li><a href="https://mac-torrent-download.net/">mac-torrent</a></li>
+          <li><a href="http://xclient.info/">xclient</a></li>     
+          <li><a href="https://sw.mac361.com/">mac361</a></li>     
+          <li><a href="https://www.macdown.com/">macdown</a></li>          
+          <li><a href="http://startupclass.club/">startupclass</a></li>
+          <li><a href="http://www.ttmeiju.vip/">天天美剧</a></li>
+          <li><a href="http://www.yiyi.cc/">一一影视</a></li>
+          <li><a href="http://www.qire123.com/">面包网</a></li>
+          <li><a href="http://www.2tu.cc/">迅播影院</a></li>
+          <br>
+          <li><a href="https://kyfw.12306.cn/otn/">新版12306</a></li>
+          <li><a href="http://www.csair.com/cn/index.shtml">南方航空</a></li>
+          <li><a href="http://et.airchina.com.cn/cn/index.shtml">国航</a></li>
+          <li><a href="http://www.ctrip.com/">携程旅行网</a></li>
+          <li><a href="http://www.qunar.com/">去哪儿网</a></li>
+          <li><a href="http://www.bthhotels.com/">如家</a></li>
+          <li><a href="http://61.145.118.100/ezkj/">证照采集</a></li>
+          <br>
+          <li><a href="https://qian.qq.com/">腾讯理财通</a></li>
+          <li><a href="http://www.creditease.cn/">宜信</a></li>
+          <li><a href="https://www.renrendai.com/">人人贷</a></li>
+          <li><a href="http://www.qiniu.com/">七牛</a></li>
+          <li><a href="https://www.teambition.com/">teambition</a></li>
+          <li><a href="https://bizspark.microsoft.com/">Microsoft BizSpark</a></li>
+          <li><a href="https://m2m.10646.cn/">联通M2</a></li>
+          <li><a href="https://cp.aliyun.com/">aliyun_platform</a></li>
+          <li><a href="http://www.quora.com/Recommended-Users-on-Quora/Whom-should-I-follow-on-Quora-and-why">Recommended Users on Quora</a></li>
+          <li><a href="http://www.bilibili.com/">bilibili</a></li>
+          <li><a href="http://www.douban.com/">豆瓣</a></li>
+          <li><a href="http://ip111.cn/">ip111</a></li>
+          <li><a href="https://ping.pe/">ping</a></li>
+          <li><a href="https://www.hk.chinamobile.com/tc/home/top-up">鸭聊佳</a></li>
+          <li><a href="https://www.vps234.com/ipchecker/">ipchecker</a></li>
+          <li><a href="https://www.hostwinds.com/">hostwinds</a></li>
+          <li><a href="https://www.linode.com/">linode</a></li>
+          <li><a href="https://www.vultr.com/">vultr</a></li>
+          <li><a href="https://www.alibabacloud.com/zh">alibabacloud</a></li>
+          <li><a href="https://www.digitalocean.com/">digitalocean</a></li>
+          <li><a href="https://cloud.google.com/compute/">cloud.google.com</a></li>
+          <li><a href="http://www.shadowfly.co/">shadow</a></li>
+          <li><a href="https://www.yuntionly.com/">yunti</a></li>
+          <li><a href="https://getlantern.org/">lantern</a></li>
+          <li><a href="http://glbproxy.com/">glbproxy</a></li>
+          <li><a href="http://www.xiyouvpn.com/">xiyouvpn</a></li>
+          <li><a href="https://shadowsocks.org/en/index.html">shadowsocks</a></li>
+          <li><a href="https://wx.qq.com/">微信网页版</a></li>
+          <li><a href="http://www.renren.com/">人人</a></li>
+          <li><a href="http://www.apple.com/">Apple</a></li>
+          <li><a href="https://plus.google.com/">Google+</a></li>
+          <li><a href="https://www.skype.com/en/">skype</a></li>
+          <li><a href="https://horizon.meta.com/">horizon</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://twitter.com/">twitter</a></li>
+          <li><a href="https://www.instagram.com/">instagram</a></li>
+          <li><a href="http://www.591danji.com/civilopedia/">文明5维基</a></li>
+          <li><a href="http://civdata.com/">文明5设计细节</a></li>
+          <li><a href="http://www.36588.com.cn/">世纪开元</a></li>
+          <li><a href="http://yxp.163.com/index.html">网易印象派</a></li>
+          <li><a href="http://www.nipic.com/index.html">昵图网</a></li>
+          <li><a href="http://699pic.com/">摄图网</a></li>
+          <li><a href="http://www.quanjing.com/">全景</a></li>
+          <li><a href="http://www.speedtest.net/">speedtest</a></li> 
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>	
